@@ -1,4 +1,5 @@
 import React from 'react';
+import { StatusBar } from 'expo-status-bar';
 import { Provider } from "react-redux";
 import HomeScreen from './screens/HomeScreen';
 import MapScreen from './screens/MapScreen';
@@ -33,6 +34,7 @@ export default function App() {
           </Stack.Navigator>
         </SafeAreaProvider>
       </NavigationContainer>
+      <StatusBar style="auto" />
     </Provider>
   );
 }
